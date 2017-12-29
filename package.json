@@ -1,0 +1,30 @@
+{
+  "name": "mean",
+  "version": "1.0.0",
+  "description": "Mean App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/revathykannan/filternew.git"
+  },
+  "engines": {
+    "node": ">=8.9.1",
+    "npm": ">=5.5.1"
+  },
+  "author": "MaheFc",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bootstrap": "^3.3.7",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.2"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.6.3"
+  }
+}

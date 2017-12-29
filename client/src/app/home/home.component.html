@@ -1,0 +1,34 @@
+<h3>Search</h3>
+
+<input type="text" placeholder="name" [(ngModel)]="name">
+<input type="text" placeholder="position" [(ngModel)]="position">
+<input type="text" placeholder="department" [(ngModel)]="department">
+<input type="text" placeholder="salary" [(ngModel)]="salary">
+
+<button (click)=searchEmployee(name,position,department,salary)>search</button>
+<button (click)=clear()>clear</button>
+
+<table class="table table-striped table-hover ">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Position</th>
+    <th>Department</th>
+    <th>Salary</th>
+    <th width="275" align="center">Action</th>
+  </tr>
+  </thead>
+  <tbody>
+   <tr  *ngFor="let employee of employees">
+    <td>{{employee.name}}</td>
+    <td>{{employee.position}}</td>
+    <td>{{employee.department}}</td>
+    <td>{{employee.salary}}</td>
+    <td width="275"> 
+      <a class="btn btn-info" routerLink="/show/{{employee._id}}">Detail</a> 
+      <a class="btn btn-success"  routerLink="/edit/{{employee._id}}">Edit</a>
+      <a class="btn btn-danger" (click)="deleteEmployee(employee._id)">Delete</a>
+    </td>
+   </tr>
+  </tbody>
+</table>
