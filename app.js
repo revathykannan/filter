@@ -6,7 +6,7 @@ var url = require('url');
 const path = require('path');
 const routes = require('./routes');
 const model = require('./model');
-//var MongoClient = require('mongodb').MongoClient;
+var MongoClient = require('mongodb').MongoClient;
 var url1 = "mongodb://revathykannan:admin123@ds123896.mlab.com:23896/employees"; //For Production
 //var url1 = "mongodb://localhost:27017/employees";
 mongoose.connect(url1)

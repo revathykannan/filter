@@ -27,7 +27,7 @@ export class EmpService {
         .map(res => res.json());
   }
   searchEmployee(name,position,department,salary){
-      return this.http.get('/get/?name='+name+'&position='+position+'&department='+department+'&salary='+salary)
+      return this.http.get("/get/?name="+name+"&position="+position+"&department="+department+"&salary="+salary)
       .map(res => res.json());
   }
 }

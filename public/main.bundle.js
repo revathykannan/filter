@@ -408,7 +408,7 @@ var EmpService = (function () {
             .map(function (res) { return res.json(); });
     };
     EmpService.prototype.searchEmployee = function (name, position, department, salary) {
-        return this.http.get('/get/?name=' + name + '&position=' + position + '&department=' + department + '&salary=' + salary)
+        return this.http.get("/get/?name=" + name + "&position=" + position + "&department=" + department + "&salary=" + salary)
             .map(function (res) { return res.json(); });
     };
     return EmpService;
